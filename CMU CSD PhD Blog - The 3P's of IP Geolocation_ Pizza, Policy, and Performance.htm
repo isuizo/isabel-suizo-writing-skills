@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://127.0.0.1:1111/2026/ipgeolocation-3ps/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    
+      
+    
+
+      <title>CMU CSD PhD Blog - The 3P's of IP Geolocation: Pizza, Policy, and Performance</title>
+
+      
+          
+          <link rel="alternate" type="application/rss+xml" title="RSS" href="http://127.0.0.1:1111/rss.xml">
+          
+      
+
+      
+          <script src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/slideout.min.js"></script>
+
+          <link rel="stylesheet" href="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+          <script defer="" src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+          <script defer="" src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+          
+          <link rel="stylesheet" href="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+          <script defer="" src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+          <script defer="" src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/mathtex-script-type.min.js" integrity="sha384-OGHJvxKrLNowXjZcg7A8ziPZctl4h7FncefPoKSuxgVXFxeM87GCKFJvOaTeBB9q" crossorigin="anonymous"></script>
+          
+              <script defer="" src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+              
+          
+      
+
+      
+          <link rel="stylesheet" href="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/site.css">
+          
+          <link rel="stylesheet" href="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+          
+      
+
+      
+      
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div id="mobile-navbar" class="mobile-navbar">
+              <div class="mobile-header-logo">
+                <a href="http://127.0.0.1:1111/" class="logo">CSD PhD Blog</a>
+              </div>
+              <div class="mobile-navbar-icon icon-out">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <nav id="mobile-menu" class="mobile-menu slideout-menu slideout-menu-left">
+              <ul class="mobile-menu-list">
+                
+                    <li class="mobile-menu-item">
+                        <a href="http://127.0.0.1:1111/">
+                            Home
+                        </a>
+                    </li>
+                
+                    <li class="mobile-menu-item">
+                        <a href="http://127.0.0.1:1111/areas">
+                            Areas
+                        </a>
+                    </li>
+                
+                    <li class="mobile-menu-item">
+                        <a href="http://127.0.0.1:1111/tags">
+                            Tags
+                        </a>
+                    </li>
+                
+                    <li class="mobile-menu-item">
+                        <a href="http://127.0.0.1:1111/rss.xml">
+                            RSS
+                        </a>
+                    </li>
+                
+                    <li class="mobile-menu-item">
+                        <a href="https://csd.cmu.edu/">
+                            CSD
+                        </a>
+                    </li>
+                
+              </ul>
+            </nav>
+
+            <header id="header">
+                <div class="logo">
+                    <img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/csd.svg" alt="CSD Logo">
+                    <div class="logo-text">
+                        <a href="http://127.0.0.1:1111/">CSD PhD Blog</a>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        
+                            <li>
+                                
+                                    <a href="http://127.0.0.1:1111/">
+                                        Home
+                                    </a>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <a href="http://127.0.0.1:1111/areas">
+                                        Areas
+                                    </a>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <a href="http://127.0.0.1:1111/tags">
+                                        Tags
+                                    </a>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <a href="http://127.0.0.1:1111/rss.xml">
+                                        RSS
+                                    </a>
+                                
+                            </li>
+                        
+                            <li>
+                                
+                                    <a href="https://csd.cmu.edu/" target="_blank">CSD</a>
+                                
+                            </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <div class="content slideout-panel slideout-panel-left" id="mobile-panel">
+                    
+
+
+<div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content always-active">
+        <nav id="TableOfContents">
+            <ul>
+                
+                <li class="">
+                    <a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#defining-the-3p-s" class="toc-link">Defining the 3P’s</a>
+                    
+                </li>
+                
+                <li class="">
+                    <a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#why-can-t-i-use-pizza-locations-for-policy-queries" class="toc-link">Why can’t I use pizza locations for policy queries?</a>
+                    
+                    <ul>
+                        
+                        <li class="">
+                            <a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#geofeeds-decent-for-locality-terrible-for-jurisdiction" class="toc-link">Geofeeds: Decent for locality, terrible for jurisdiction</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li class="has-active">
+                    <a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#why-can-t-i-use-pizza-locations-for-performance-queries" class="toc-link">Why can’t I use pizza locations for performance queries?</a>
+                    
+                    <ul>
+                        
+                        <li class="has-active">
+                            <a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#measuring-the-impact-of-pop-aware-mappings" class="toc-link active">Measuring the Impact of PoP-Aware mappings</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    <a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#summary" class="toc-link">Summary</a>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<article class="post">
+    
+    <header class="post__header">
+        <h1 class="post__title">
+            <a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/">The 3P's of IP Geolocation: Pizza, Policy, and Performance</a>
+        </h1>
+        <div class="post__meta">
+            <span class="post__time">2026-04-06</span> |
+            <span class="post__author">
+              
+
+
+
+  
+  
+
+
+<a href="https://www.isabelsuizo.com/" target="_blank">
+  Isabel Suizo
+</a>
+
+            </span>
+            
+        </div>
+    </header>
+    
+      
+    
+    
+
+    <div class="post-content">
+      <p>IP Geolocation services are prolific on the Internet today. They’re used in a variety of applications including fraud detection, targeted advertising, and localized recommendations. While these geolocation providers may employ different approaches, they all aim to answer the seemingly simple question: Given an IP address, where is this IP address located?</p>
+<p>Sample response to query using IPInfo <code>curl ipinfo.io/128.2.208.106</code>:</p>
+<pre style="background-color:#393939;color:#dedede;"><code><span>{
+</span><span>  "ip": "128.2.208.106",
+</span><span>  "hostname": "radish.sherry.cs.cmu.edu",
+</span><span>  "city": "Carnegie",
+</span><span>  "region": "Pennsylvania",
+</span><span>  "country": "US",
+</span><span>  "loc": "40.4087,-80.0834",
+</span><span>  "org": "AS9 Carnegie Mellon University",
+</span><span>  "postal": "15106",
+</span><span>  "timezone": "America/New_York",
+</span><span>  "readme": "https://ipinfo.io/missingauth"
+</span><span>}
+</span></code></pre>
+<p>However, this seemingly simple task has remained an important challenge within the networking community for over twenty-five years. This is because IP addresses lack a consistent, logical mapping to either the physical or network location of their use. Thus, IP geolocation services rely heavily on operator-published mappings of IPs to physical locations, which we call geofeeds, or latency-based inference methods. Today, IP geolocation is most accurately solved using databases that fuse datamining, latency, and provider-supplied information. Even with modern databases, however, IP geolocation remains difficult due to the dynamic nature of IP address assignments which underscore the importance of consistent snapshots for accurate measurements.</p>
+<p>Even with perfectly up-to-date databases, however, the IP geolocation problem would not be solved. Researchers have noted that IP geolocation “[lacks] a consistent ontology for the meaning of ‘location’”<sup class="footnote-reference"><a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#5">1</a></sup> and that “Without that clarity, teams may apply the signal incorrectly in: policy enforcement, regulatory workflows, fraud detection, and content localization” <sup class="footnote-reference"><a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#6">2</a></sup>. These challenges combine with two additional growing tensions for network location: preserving users’ location privacy, and increasing legislative emphasis on digital rights management and jurisdiction-specific content access restrictions. In these circumstances, the assumption that there is one location for a particular address seems increasingly fraught.</p>
+<p>Hence, we formalize these fundamental challenges of geolocation as three distinct issues, which we call the 3P’s of IP geolocation: Pizza (mapping a user to an approximate location physically near them), Policy (mapping a user to a set of laws and regulations governing them), and performance (mapping a user to a network service that can provide high bandwidth, low-latency service). We argue that the 3P’s are not merely challenges towards building a unified and accurate geolocation service, but in reality, related and separate problems that must be handled independently. That is, the ‘best’ response to a pizza query is definitionally different than that of Performance or Policy query, and thus <strong>any geolocation service cannot provide one correct answer that presumes to be accurate for all three use cases</strong>. To bolster the case for considering geolocation as three separate operations, we provide measurements that highlight extreme and worst-case outcomes from conflating these use cases.</p>
+<h1 id="defining-the-3p-s">Defining the 3P’s</h1>
+<ol>
+<li>Pizza - Use cases that belong to this category care mostly about <em>localization</em> (i.e. Approximately where is this user located?) Targeted ads, localized recommendations, and online banking security are all considered Pizza use cases. For example, Google may infer a user’s location from an IP to help determine, “What pizza parlors are near this user?” In this case, Google is interested in information about where the IP is <em>physically</em> located.</li>
+<li>Policy - On matters of policy, applications rely on IP geolocation to identify the jurisdiction users fall under. Jurisdiction is particularly important in matters of digital rights management, government-wide censorship, and age-restricted-content laws. For example, TikTok may use IP geolocation to determine whether a user with IP 1.2.3.4 should be eligible to access the app. In this case, TikTok wants information about the <em>jurisdiction</em> the user falls under.</li>
+<li>Performance - When considering performance, applications want to estimate an IP’s location in the network to identify optimal replica mappings nearby. Content delivery networks (CDNs) and cloud providers are applications that typically belong in this category. Wikipedia, a geo-replicated service, uses IP geolocation to determine which cache to map users to. In this case, Wikipedia cares about the <em>network</em> location of the IP.</li>
+</ol>
+<p>In the rest of this article, we provide intuition for why these use cases must be handled separately, then present measurements that highlight the consequences of conflating our three notions of geolocation. For the sake of simplicity, we highlight two dimensions in this post, but further dimensions of analysis are available in the full paper.</p>
+<ol>
+<li>Why can’t we use pizza locations for policy queries?</li>
+<li>Why can’t we use pizza locations for performance queries?</li>
+</ol>
+<h1 id="why-can-t-i-use-pizza-locations-for-policy-queries">Why can’t I use pizza locations for policy queries?</h1>
+<p>At first glance, the Pizza and Policy queries seem to care about the same thing – they both simply want to know where on Earth the user is located. And it is true that the ideal answer of both Pizza and Policy use cases is the same when perfect data is available (say, GPS information). From a pragmatic standpoint, however, IP geolocation services have to deal with something we call <strong>geolocation uncertainty</strong> which derives from privacy preservation and limitations on measurement infrastructure. In reality, all services that care about IP geolocation do not (and some argue, should never) have access to perfect location data. In practice, IP geolocation services must infer a user’s location and instead report within a range of possible locations.</p>
+<p>Consider the example below of a user in Geneva, CH. In Geneva, users are subject to Switzerland’s data privacy laws (FADP), as opposed to GDPR which applies to EU member countries. For Policy queries, a response of “Switzerland” would be the ideal response to inform the service which policy to apply. However, for recommendation applications, a query concerning “Hikes within 1 hour near me”, would prefer a response with a range that is geographically distributed without regard for national borders, including eastern France. Hence, in light of geolocation uncertainty, it is important to consider whether the geolocation task cares about pinpointing the user to an approximate location or a jurisdiction region. The cost of conflating these queries becomes more apparent when we dig into a mechanism that underlies many IP geolocation services today<sup class="footnote-reference"><a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#1">3</a></sup>: geofeeds.
+<img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/geneva_gdpr_100km_zoomedout.png" alt="This image shows a map of Europe, focused on Geneva, CH. A 100km radius is drawn around Geneva while Switzerland is shaded in. The image shows that the 100km radius that may be relevant for Pizza queries is distributed without regard for borders, overlapping with France."></p>
+<h2 id="geofeeds-decent-for-locality-terrible-for-jurisdiction">Geofeeds: Decent for locality, terrible for jurisdiction</h2>
+<p>So what are geofeeds, and how are IP geolocation services using them? Geofeeds<sup class="footnote-reference"><a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#2">4</a></sup> are operator-published files which specify a mapping of subnet to physical location to enhance IP geolocation accuracy. Typically, operators will assign a user to a subnet that belongs to the city closest to the user<sup class="footnote-reference"><a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#3">5</a></sup>. While this is a reasonable approach for localization tasks, this method of mapping completely disregards any notion of borders. Thus, this method of geolocation has the potential to mischaracterize the jurisdiction of users located in border regions.</p>
+<h3 id="drawing-voronoi-diagrams-from-geofeeds">Drawing Voronoi Diagrams from Geofeeds</h3>
+<p>For this study, we utilize Voronoi diagrams <sup class="footnote-reference"><a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#4">6</a></sup> to gain insights into the prevalence of this problem. A Voronoi diagram is partitioning of a plane with n points into convex polygons such that each polygon contains exactly one generating point, and every point in a given polygon is closer to its generating point than to any other. In this case, our plane is a map of countries and our generating points are the cities listed on an operator’s geofeed. Hence, we can visualize the regions that map to each city and quantify how often these regions cross boundaries.</p>
+<h3 id="results">Results</h3>
+<p>The Voronoi diagram for Deutsche Telekom is depicted below. While most of the feed data is in Germany, there are additional cities in the geofeed beyond German borders. As a minimum bound for the number of overlapping countries, we only take into account countries with cities present in the geofeed.
+<img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/europe_overlap_map.jpg" alt="This image depicts the Voronoi regions colored according to the number of countries that overlap the region.">
+We find that outside of Germany, Deutsche Telekom’s Voronoi regions often overlap multiple countries, reaching up to seven overlapping countries for the region that corresponds to Budapest, Hungary. Even within Germany, we find regions overlapping with other countries near its borders. This mapping demonstrates that denser geofeed cities can help reduce the number of overlapping countries, but the problem is still relevant in border regions. Even taking into account the density of cities within Germany, we find that over 10% of Voronoi regions overlap with at least 2 countries.
+<img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/europe_overlap_hist.jpg" alt="This image shows a histogram where the Y axis is the percentage of Voronoi regions and the X axis is the number of countries that overlap with the region. The graph has a thin right tail. ">
+While geofeeds may be a reasonable mapping for Pizza queries concerned with approximating the location of a user, they fall short for policy tasks that require high accuracy when identifying the user’s jurisdiction.</p>
+<h1 id="why-can-t-i-use-pizza-locations-for-performance-queries">Why can’t I use pizza locations for performance queries?</h1>
+<p>Before diving into the impacts of conflating Pizza and Performance locations, we shall first explore why we care about the distinction in the first place.</p>
+<p>For starters, what exactly is the performance location? In this article, we describe the performance (or network location) as <em>the physical point where the user’s traffic exits its ISP to peer with the rest of the Internet</em> (we will explain why in the next paragraph). For most Internet users, the network location is relatively close in proximity to their physical location, as Internet exchange points exist in almost every major metropolitan city. However in some special cases, like satellite networks or remote regions, the closest peering point may actually be very far away. In the case of Starlink, a low-earth orbiting satellite network, the network location is synonymous with its point of presence (PoP), the component where all satellite traffic meets terrestrial traffic.</p>
+<p>But why is performance location the same as their network location? In the below example, we have a Starlink user located in Pittsburgh, PA whose PoP is in New York City, NY and we want to access some website hosted by a CDN. Now, if the mapping decision uses a Pizza location (which is an approximate location for where the user is physically located), this would result in mapping the user to the server in Pittsburgh. However, in the case of Starlink, this leads to a circuitous route from Pittsburgh, through the fixed PoP, then all the way back to Pittsburgh. Instead, a network-aware mapping could reduce propagation delay by mapping this Starlink user to the replica in New York, shortening the overall distance traffic must travel. Thus, knowledge of the network location, as opposed to the physical location may be more useful in the context of performance.
+<img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/mappings.png" alt="This visualization illustrates two paths that highlight the increased propagation delay when using the Pizza location. The first map shows a circuitous route when the replica near Pittsburgh is selected while the second shows a more efficient path using the replica near New York City."></p>
+<p>To quantify just how far a user’s physical location (for Pizza queries) may be from their network location (for Performance queries), we use real Starlink probes with user-reported locations on the RIPE Atlas testbed. RIPE Atlas provides the coordinates and IP address of the machine, which we use to identify the probe’s PoP. We calculated the PoP to probe distance for 108 Starlink probes and visualize the distribution of distances below.
+<img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/cdf_ripe_probe_pop_dist.jpg" alt="This visual shows a CDF of the distance between Starlink probes and their PoPs. There is a steep beginning curve with a long tail.">
+While most RIPE probes are within a few hundred kilometers from their PoP, we observe this long tail behavior with 14.8% of probes at least 1000km away and 10.2% of probes at least 2000km from their PoP. Therefore, the location that Pizza queries care about, the physical location of the probe, and vary drastically from the location relevant to Performance queries.</p>
+<h2 id="measuring-the-impact-of-pop-aware-mappings">Measuring the Impact of PoP-Aware mappings</h2>
+<p>To motivate the importance of distinguishing physical versus network location, we designed a measurement study to quantify the benefits of PoP-Aware mappings on real-world systems. In this study, we focus specifically on Starlink users because their network and physical location can be vastly different. To gather realistic data, we benchmarked real-world services with georeplicated deployments: Meta, Akamai, Cloudfront, and Wikipedia. However, given that we want to compare latencies when mapping using the Performance location (server closest to the PoP) versus the Pizza location (server closest to the probe), we must have knowledge about the deployments of these services and target IPs to each of these deployments. This task brought about several challenges. In this next section, we enumerate three challenges along with our mitigation strategies.</p>
+<h3 id="building-a-mapping-of-services-locations-to-live-ips">Building a mapping of services’ locations to live IPs</h3>
+<p>One of the main challenges of this experiment was determining where services’ replicas are geographically located and how to ping them. Determining <em>where</em> services were located was a challenge because we did not have access to ground truth. Thus, we relied on a combination of third-party IP geolocation databases, WHOIS records, and RTT-based validation. On the other hand, identifying the address for gathering ping data was a challenge because IPs are extremely dynamic and constantly being reassigned or decommissioned. We present these challenges and our mitigation strategies below.</p>
+<ol>
+<li><strong>Where are services located?</strong> To determine where services are located, we used geographically-dispersed DNS queries to gather a variety of responses. First, we generated a mesh of RIPE Atlas probes such that no two probes were within 200km of one another. With this mesh of roughly 500 probes, we ran a DNS query to the service. We then used IPInfo to geolocate each of the resulting IP addresses. This resulted in a mapping of city to list of IPs (e.g. {“Pittsburgh”: [128.10.99.1, 128.10.99.2]}) for each service. In order to mitigate temporal effects, we repeated this process once per day for three days.</li>
+<li><strong>How can we validate third-party location data?</strong> As this work suggests, IP geolocation alone is insufficient for determining where these IP addresses are physically located. Therefore, we added a validation step for all IPs added into our database using RTT measurements from RIPE Atlas probes inspired by prior work<sup class="footnote-reference"><a href="http://127.0.0.1:1111/2026/ipgeolocation-3ps/#7">7</a></sup>. For each (city,IP) pair derived from Step 1, we launched a ping from a set of RIPE Atlas probe validators to the IP. Since RIPE Atlas reports the location of probes, we calculated a lower bound for the time it takes for the ping to reach the city by dividing the distance between the city and probe by the speed of Internet, 2/3 of the speed of light. <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Lower&nbsp;bound&nbsp;for&nbsp;ping</mtext><mo>=</mo><mfrac><mtext>Distance&nbsp;between&nbsp;probe&nbsp;and&nbsp;city</mtext><mrow><mn>2</mn><mi mathvariant="normal">/</mi><mn>3</mn><mo>∗</mo><mi>c</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\text{Lower bound for ping} = \frac{\text{Distance between probe and city}}{2/3*c}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.8889em; vertical-align: -0.1944em;"></span><span class="mord text"><span class="mord">Lower&nbsp;bound&nbsp;for&nbsp;ping</span></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 2.3074em; vertical-align: -0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.3714em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">2/3</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mord mathnormal">c</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord text"><span class="mord">Distance&nbsp;between&nbsp;probe&nbsp;and&nbsp;city</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.936em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span>If any ping was faster than the speed of Internet constraint, the server location was removed from the set.</li>
+<li><strong>How do we handle stale IPs?</strong> During this experiment, we found that server IPs were constantly going stale or being reassigned. Therefore, before each ping was launched, we executed our IP refresher script. In this script, we executed three steps of validation: First, we ensured that the IP was still live by pinging it. Second, we validated that the IP was still owned by our service of interest by checking the WHOIS data. Finally, we re-geolocated the address to make sure that the location still matched the recorded server location. If any of these steps failed, we searched for a new IP from a list of 32 random IPs in the same /24. If none of those IPs passed validation, we launched a DNS query from 3 RIPE probes in the vicinity of the server location and re-ran the validation process on the resulting IPs. Finally, if none of those IPs pass, we assume the server has gone offline and remove it from our set.</li>
+</ol>
+<h3 id="experiment-design">Experiment Design</h3>
+<p>For each Starlink RIPE Atlas probe we executed the following steps:</p>
+<ol>
+<li>Identify replica closest to the probe</li>
+<li>Identify replica closest to the PoP</li>
+<li>Ping both replicas from the probe</li>
+<li>Repeat steps 1-3 every 4 hours for 7 days to mitigate time of day effects
+<img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/experiment.gif" alt="This GIF displays the steps of the experiment outlined above."></li>
+</ol>
+<h3 id="analysis">Analysis</h3>
+<p>Given the non-deterministic behavior of ping times, we utilize stochastic dominance to determine whether the probe or PoP mapping is better. We say that a PoP-aware mapping stochastically dominates a probe-aware mapping if <span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mrow><mo fence="true">[</mo><mi>R</mi><mi>T</mi><msub><mi>T</mi><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">P</mi></mrow></msub><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>&gt;</mo><mi>x</mi><mo fence="true">]</mo></mrow><mo>≤</mo><mi>P</mi><mrow><mo fence="true">[</mo><mi>R</mi><mi>T</mi><msub><mi>T</mi><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">e</mi></mrow></msub><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>&gt;</mo><mi>x</mi><mo fence="true">]</mo></mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo separator="true">,</mo><mi>x</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+P\left[RTT_{\mathrm{PoP}}(\mathrm{ms}) &gt; x\right] \leq P\left[RTT_{\mathrm{probe}}(\mathrm{ms}) &gt; x\right] \forall x, x \geq 0
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.1389em;">P</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top: 0em;">[</span><span class="mord mathnormal" style="margin-right: 0.1389em;">RT</span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.1389em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3283em;"><span class="" style="top: -2.55em; margin-left: -0.1389em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">PoP</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathrm">ms</span></span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mord mathnormal">x</span><span class="mclose delimcenter" style="top: 0em;">]</span></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1.0361em; vertical-align: -0.2861em;"></span><span class="mord mathnormal" style="margin-right: 0.1389em;">P</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top: 0em;">[</span><span class="mord mathnormal" style="margin-right: 0.1389em;">RT</span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.1389em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3361em;"><span class="" style="top: -2.55em; margin-left: -0.1389em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">probe</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.2861em;"><span class=""></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathrm">ms</span></span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mord mathnormal">x</span><span class="mclose delimcenter" style="top: 0em;">]</span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">∀</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">0</span></span></span></span></span></span>
+<img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/probe_example.png" alt="This image displays the CCDFs of the PoP aware RTTs vs. probe-aware RTTs. The PoP-aware CCDF never crosses the probe-aware CCDF and remains always to the left."></p>
+<p>Note: In this case, the smaller RTT stochastically dominates the other. This is because we want the convention that faster ping times dominate slower ping times. For example, in the example above, we say that for probe ID 64237, the PoP mapping stochastically dominates probe mapping.
+<img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/speed_probe.png" alt="This bar chart shows the number of times we see stochastic dominance across all services. Each bar is annotated with the median speed up using the PoP-aware mapping.">
+The figure above depicts the results for the 5 major services across 115 Starlink probes. Each bar is annotated with the median speedup using PoP mapping. From this graph, we conclude that for most probes, the probe and PoP mappings are identical (i.e., the server closest to probe is identical to closest to PoP). However, in the cases when they are different, the PoP mapping is generally more optimal and often stochastically dominates the probe mappings. Even in the case where stochastic dominance is not achieved in the mixed category (when one does not strictly stochastically dominate the other), it is still on average, more advantageous to have PoP-aware mappings. In the full paper, we show evidence that most large services do have PoP-aware mappings either explicitly using information from ISPs like pops.csv or implicitly from performance-based mappings like Akamai. Please see our paper for a deeper dive into these results and comparisons between the RTTs of our PoP-aware mappings and state-of-the-art mappings.</p>
+<h1 id="summary">Summary</h1>
+<p>In short, our data suggests that the community needs to stop treating IP geolocation as a one-size-fits-all tool and instead move towards a system in which geolocation services offer distinct APIs that are trifurcated along these three dimensions. While the challenges we talk about have been mentioned by others both implicitly and explicitly, our contribution is to provide data illuminating how fundamentally impossible it is to continue with the current regime. Our goal is to motivate the community to move towards geolocation solutions that explicitly subdivide these related but distinct tasks. If you’d like to learn more about our study, or even participate in our crowd-sourced dataset, please visit <a rel="noopener" target="_blank" href="https://whereareyouproject.org/">whereareyouproject.org</a>.</p>
+<div class="footnote-definition" id="5"><sup class="footnote-definition-label">1</sup>
+<p>https://www.potaroo.net/ispcol/2025-12/geoip.html</p>
+</div>
+<div class="footnote-definition" id="6"><sup class="footnote-definition-label">2</sup>
+<p>https://ipinfo.io/blog/geofeeds-in-practice</p>
+</div>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">3</sup>
+<p>IPInfo, Maxmind</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">4</sup>
+<p>https://datatracker.ietf.org/doc/rfc8805/</p>
+</div>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">5</sup>
+<p>https://developer.apple.com/icloud/prepare-your-network-for-icloud-private-relay/</p>
+</div>
+<div class="footnote-definition" id="4"><sup class="footnote-definition-label">6</sup>
+<p>https://en.wikipedia.org/wiki/Voronoi_diagram</p>
+</div>
+<div class="footnote-definition" id="7"><sup class="footnote-definition-label">7</sup>
+<p>https://research.owlfolio.org/pubs/2018-catch-proxies-lie.pdf</p>
+</div>
+
+    </div>
+
+    
+    
+
+    <div class="post-footer">
+        
+            Author: 
+
+
+
+  
+  
+
+
+<a href="https://www.isabelsuizo.com/" target="_blank">
+  Isabel Suizo
+</a>
+
+            <br>
+            Approved by:
+            
+            
+
+
+
+  
+  
+
+
+<a href="https://www.andrew.cmu.edu/user/nicolasc/" target="_blank">
+  Nicolas Christin,
+</a>
+
+            
+            
+
+
+
+  
+  
+
+
+<a href="https://www.cs.cmu.edu/~christos/" target="_blank">
+  Christos Faloutsos,
+</a>
+
+            
+            
+
+
+
+  
+  
+
+
+<a href="https://www.noahsinger.org/" target="_blank">
+  Noah Singer
+</a>
+
+            <!--
+            NOTE: this is only for the blog posts displayed on the screens in the hall.
+            Adding a hidden graphic to the end of each post so that if no other graphic exists
+            in the post, we won't just have a blank white space on the screen. TelemetryTV picsk the
+            firt image it finds in the post and will use this one if another doesn't exist because
+            it doesn't notice that it is marked as hidden by the CSS.
+            -->
+            <div class="telemetry-placeholder">
+                <img src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/blog-header.jpeg" alt="hidden placholder">
+            </div>
+
+            <br>
+            
+                <div class="post-tags">
+                    
+                        <a href="http://127.0.0.1:1111/areas/systems/">#Systems</a>
+                    
+                    <br>
+                    
+                        <a href="http://127.0.0.1:1111/tags/networking/">#networking</a>
+                    
+                        <a href="http://127.0.0.1:1111/tags/routing/">#routing</a>
+                    
+                        <a href="http://127.0.0.1:1111/tags/leo-networks/">#LEO networks</a>
+                    
+                </div>
+            
+            
+            <div class="post-nav">
+                
+                    <a class="previous" href="http://127.0.0.1:1111/2026/polysys/">‹ Polysys: an Algebraic Leakage Attack Engine </a>
+                
+                
+            </div>
+            
+        
+
+    </div>
+
+    
+    
+</article>
+
+
+                </div>
+            </main>
+
+            
+            
+        </div>
+
+      
+          <script type="text/javascript" src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/even.js"></script>
+      
+    <script src="./CMU CSD PhD Blog - The 3P&#39;s of IP Geolocation_ Pizza, Policy, and Performance_files/livereload.js"></script>
+
+
+</body></html>
